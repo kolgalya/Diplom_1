@@ -19,13 +19,13 @@ class Burger:
     def set_buns(self, bun: Bun):
         self.bun = bun
 
-    def add_ingredient(self, ingredient: Ingredient):
+    def add_ingredient(self, ingredient: Ingredient):  #добавить ингридиент
         self.ingredients.append(ingredient)
 
-    def remove_ingredient(self, index: int):
+    def remove_ingredient(self, index: int):  #удалить ингридиент
         del self.ingredients[index]
 
-    def move_ingredient(self, index: int, new_index: int):
+    def move_ingredient(self, index: int, new_index: int):  # переместить ингридиент
         self.ingredients.insert(new_index, self.ingredients.pop(index))
 
     def get_price(self) -> float:
