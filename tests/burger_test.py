@@ -54,4 +54,4 @@ class TestBurger:
         burger = Burger()
         burger.bun = mock_bun
         burger.ingredients = [mock_ingredient]
-        assert f"Price: {mock_price.return_value}" in burger.get_receipt()
+        assert 'Price: 680' in burger.get_receipt()
